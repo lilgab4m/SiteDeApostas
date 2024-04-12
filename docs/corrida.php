@@ -4,29 +4,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSI.BET</title>
-  <link rel="stylesheet" href="f1.css" type="text/css">
-  <script type="text/javascript" src="f1.js"></script>
+  <link rel="stylesheet" href="corrida.css" type="text/css">
+  <script type="text/javascript" src="corrida.js"></script>
 
 </head>
 <body onload="init()">
 
   <!-- Header -->
 
-  <header>
-    <div class="header-grid">
-      <h1>POSI.BET</h1>
-      <!-- Easter egg na logo da Positivo durante a corrida -->
-      <button id="botaoSecreto" onclick="secret()" disabled><img id="logo" src="img/universidade-positivo-logo.png"></img></button>
+ <div class="fundocor">
+      <button id="botaoSecreto" onclick="secret()" disabled></button>
     </div>
-    <p id="slogan">A sua casa de apostas.</p>
-  </header>
-
-
-  <!-- Menu de Apostas -->
 
   <section class="menu">
   <div class="container">
-    <div class="carros-container">
+    
+      <br>
+      <p id="resultado"></p>
+    </div>
+    <div class="aposta-container">
+      <input type="number" id="valorAposta" placeholder="Valor da Aposta">
+      <br>
+      <br>
+
+    </div>
+    <div class="saldo-container">
+      <h2>SALDO: R$ <span id="saldo">100</span></h2>
+      <br>
+      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar">
+      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
+      
+    </div>
+    
+    </div>
+  </div>
+  <div class="fundocolor ">
+  <div class="carros-container">
       <h3>ESCOLHA O CARRO:</h3>
       <table>
         <tr>
@@ -37,37 +50,29 @@
           <td><button id="escolherCarroBtn5" onclick="escolherCarro(5)">Carro 5</button></td>
         </tr>
       </table>
-      <br>
-      <p id="resultado"></p>
-    </div>
-    <div class="aposta-container">
-      <input type="number" id="valorAposta" placeholder="Valor da Aposta">
-      <br>
-      <br>
-      <button id="realizarApostaBtn" onclick="realizarAposta()">FAZER APOSTA</button>
-    </div>
-    <div class="saldo-container">
-      <h2>SALDO: R$ <span id="saldo">100</span></h2>
-      <br>
-      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar">
-      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
-    </div>
-    
-    </div>
+
   </div>
   <br><br>
+  
   <div class="perks-container">
     <h3>PERKS:</h3>
     <br>
 
+    
+<div class="textcolor">
         <button id="perkBtn" onclick="comprarVantagem(7)"><b>$7 -</b>  Aumentar Velocidade do Carro</button>
         <button id="perkBtn" onclick="comprarVantagem(5)"><b>$5 -</b>  Reduzir Velocidade de Oponente Aleatório</button>
         <button id="perkBtn" onclick="comprarVantagem(10)"><b>$10 -</b>  Reduzir Velocidade do Oponente Mais à Frente</button>
-
+</div>
     </div>
+    <div class="aposta">
+    <button id="realizarApostaBtn" onclick="realizarAposta()">FAZER APOSTA</button>
+    </div>  
   </section>
   
   <br>
+</div>
+</div>
   <!-- Pista de Corrida -->
 
   <div class="pista">
@@ -92,25 +97,14 @@
     <div id="linha4"></div>
     <img id="carro5" src="img/peru.png"></img>
   </div>
-  <br><br><br><br><Br>
-
+  <br><br>
 
   <!-- Colaboradores -->
   
-  <div class="colaboradores-container">
-    <h2>COLABORADORES:</h2>
-    <div class="colaboradores-grid">
-      <video src="vid/PosiBet_Ta_pagando.mp4" controls></video>
-      <video src="vid/PosiBet_Ta_pagando_2.mp4" controls></video>
-    </div>
-  </div>
+
   <br><br><br>
 
 
-<footer>
-  <h3>Desenvolvido por:</h3>
-  <p>Guil HTML & Grassi JS</p>
-  <p>Versão Beta 9.1</p>
-</footer>
+  <?php include '/xampp/htdocs/Roulette-castle/rodape/rodape.php'; ?>
 </body>
 </html>
