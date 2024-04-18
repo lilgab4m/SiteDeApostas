@@ -20,6 +20,7 @@ body{
   
   h2{
     text-align: center;
+    color: #fff;
   }
   h3{
     color: #01BB0B;
@@ -31,6 +32,9 @@ body{
     width: 100%;
     height: 314.5px;
     background-color: #000000  ;
+  }
+  span{
+    color: #fff;
   }
   
   
@@ -132,6 +136,7 @@ body{
     margin-left: 1800px;
   }
   
+  
   #linhachegada3{
     position: absolute;
     z-index: 1;
@@ -183,6 +188,7 @@ body{
     background-image: url("img/carro2.png");
     background-repeat: no-repeat;
     background-position: 0 0;
+    display: block;
   }
   
   #carro3 {
@@ -266,7 +272,7 @@ body{
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
-    background-image: url('img/fundo.png');
+   /*  background-image: url('img/fundo.png'); */
     background-size: cover;
     background-position: center;
     max-width: 1000px;
