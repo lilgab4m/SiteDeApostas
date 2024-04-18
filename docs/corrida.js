@@ -172,7 +172,7 @@ function reduzirOponenteMaisAFrente() {
 }
 function velocidade() {
   if (linhaChegadaAlcancada || vencedorDefinido) {
-    clearInterval(myInterval);
+    clearIntervaal(myInterval);
     const vencedor = determinarVencedor();
     if (vencedor === carroEscolhido) {
       saldoInicial += valorAposta * 2;

@@ -12,32 +12,36 @@
 
   <!-- Header -->
 
- <div class="fundocor">
+
       <button id="botaoSecreto" onclick="secret()" disabled></button>
     </div>
 
   <section class="menu">
-  <div class="container">
+
     
       <br>
       <p id="resultado"></p>
     </div>
-    <div class="aposta-container">
-      <input type="number" id="valorAposta" placeholder="Valor da Aposta">
-      <br>
-      <br>
 
-    </div>
-    <div class="saldo-container">
-      <h2>SALDO: R$ <span id="saldo">100</span></h2>
+
       <br>
-      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar">
+      <br>
+      <h2>SALDO: R$ <span id="saldo">100</span></h2>
+    <div class="saldo-container">
+  
+      <br>
+      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar"><br> 
+            <input type="number" id="valorAposta" placeholder="Valor da Aposta"><br>
+
+      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
+
       <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
       
     </div>
     
     </div>
   </div>
+<br><br><br>
   <div class="fundocolor ">
   <div class="carros-container">
       <h3>ESCOLHA O CARRO:</h3>
@@ -64,12 +68,13 @@
         <button id="perkBtn" onclick="comprarVantagem(5)"><b>$5 -</b>  Reduzir Velocidade de Oponente Aleatório</button>
         <button id="perkBtn" onclick="comprarVantagem(10)"><b>$10 -</b>  Reduzir Velocidade do Oponente Mais à Frente</button>
 </div>
-    </div>
+    </div><br>
     <div class="aposta">
-    <button id="realizarApostaBtn" onclick="realizarAposta()">FAZER APOSTA</button>
+    <button id="realizarApostaBtn" onclick="realizarAposta()">APOSTAR</button>
     </div>  
   </section>
   
+      <br>
   <br>
 </div>
 </div>
