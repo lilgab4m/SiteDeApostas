@@ -39,7 +39,9 @@
     <div class="saldo-container">
   
       <br>
+      <h2>SALDO: R$ <span id="saldo">100</span></h2>
       <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar"> 
+      <h2>Valor da aposta </h2>
             <input type="number" id="valorAposta" placeholder="Valor da Aposta"><br>
 
             <div class="depositbut">
