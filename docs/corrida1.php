@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>POSI.BET</title>
-  <link rel="stylesheet" href="corrida.css" type="text/css">
+  <link rel="stylesheet" href="corrida1.css" type="text/css">
   <script type="text/javascript" src="corrida.js"></script>
 
 </head>
@@ -16,7 +16,16 @@
       <button id="botaoSecreto" onclick="secret()" disabled></button>
     </div>
 
+
+
+
+
   <section class="menu">
+<div class="imagem1">
+<img src="img/primeiraimg.jpg"alt="imageminicial">
+
+</div>
+
 
     
       <br>
@@ -30,13 +39,16 @@
     <div class="saldo-container">
   
       <br>
-      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar"><br> 
+      <input type="number" id="valorAdicionar" placeholder="Valor a Adicionar"> 
             <input type="number" id="valorAposta" placeholder="Valor da Aposta"><br>
 
-      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
+            <div class="depositbut">
+            <div class="butaoar">
+      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Depositar 
+</div>
 
-      <button id="adicionarDinheiroBtn" onclick="adicionarDinheiro()">Adicionar Dinheiro</button>
-      
+      <button id="adicionarDinheiroBtn" oclick="adicionarDinheiro()">Depositaar</button>
+            </div>  
     </div>
     
     </div>
